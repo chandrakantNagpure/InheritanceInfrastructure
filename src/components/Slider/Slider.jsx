@@ -2,12 +2,12 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import inheritance_wall from "../../assets/images/inheritance_wall.png";
-// import inheritance_video from "../../assets/images/inheritance_logo_video.mp4";
-import sliderImg1 from "../../assets/images/mbinfra_1.jpg";
-import sliderImg2 from "../../assets/images/peakorchard.jpg";
-import sliderImg3 from "../../assets/images/anjaneyagroup.jpg";
-import sliderImg4 from "../../assets/images/woodsresidency.jpg";
+// import inheritance_wall from "../../public/assets/images/inheritance_wall.png";
+// import inheritance_video from "../../public/assets/images/inheritance_logo_video.mp4";
+import sliderImg1 from "../../public/assets/images/mbinfra_1.jpg";
+import sliderImg2 from "../../public/assets/images/peakorchard.jpg";
+import sliderImg3 from "../../public/assets/images/anjaneyagroup.jpg";
+import sliderImg4 from "../../public/assets/images/woodsresidency.jpg";
 
 const responsive = {
   desktop: {

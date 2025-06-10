@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Mbinfra from "../../assets/images/mbinfra_1.jpg";
-import Peakorchard from "../../assets/images/peakorchard.jpg";
-import Anjaneyagroup from "../../assets/images/anjaneyagroup.jpg";
-import WoodsResidency from "../../assets/images/woodsresidency.jpg";
+import Mbinfra from "../../public/assets/images/mbinfra_1.jpg";
+import Peakorchard from "../../public/assets/images/peakorchard.jpg";
+import Anjaneyagroup from "../../public/assets/images/anjaneyagroup.jpg";
+import WoodsResidency from "../../public/assets/images/woodsresidency.jpg";
 // eslint-disable-next-line no-unused-vars
 import { delay, motion } from "framer-motion";
 import { FadeRight, FadeUp, FadeDown } from "../../utility/animation";

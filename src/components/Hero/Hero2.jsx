@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import Banner2Png from "../../assets/images/intro.jpeg"
+import Banner2Png from "../../public/assets/images/intro.jpeg"
 import { motion } from 'framer-motion'
 import { FadeRight, FadeUp } from '../../utility/animation.jsx'
 

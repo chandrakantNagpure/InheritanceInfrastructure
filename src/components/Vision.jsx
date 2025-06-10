@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // import { FadeUp } from "../utility/animation.jsx";
 import { FaLowVision } from "react-icons/fa";
-import AboutImg from "../assets/images/home_image.jpg";
+import AboutImg from "../public/assets/images/home_image.jpg";
 import { NavLink } from "react-router-dom";
 import { FadeDown, FadeUp } from "../utility/animation";
 

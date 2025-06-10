@@ -8,7 +8,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import logoImg from "../../assets/images/logo.png"; // Adjust path if needed
+import logoImg from "../../public/assets/images/logo.png"; // Adjust path if needed
 
 const SiteFooter = () => {
   const navLinks = [

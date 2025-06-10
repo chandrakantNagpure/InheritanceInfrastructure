@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logoImg from "../../assets/images/logo.png";
+import logoImg from "../../public/assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
 import { BsSun, BsMoon } from "react-icons/bs";

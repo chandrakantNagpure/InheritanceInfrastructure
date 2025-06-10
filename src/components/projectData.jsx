@@ -1,11 +1,11 @@
 // src/projectsData.js
 
 // Import images for each project
-import mbinfraImg from '../assets/projects/mbinfra/M_image_1.jpg';
-import mbinfra2 from '../assets/projects/mbinfra/M_image_5.jpg'
-import peakorchardImg from '../assets/projects/peakorchard/2.jpg';
-// import bardegroupImg from '../assets/projects/bardegroup/2.jpg';
-import anjaneyagroupImg from '../assets/projects/anjaneyagroup/AN_Image_1.jpg';
+import mbinfraImg from '../public/assets/projects/mbinfra/M_image_1.jpg';
+import mbinfra2 from '../public/assets/projects/mbinfra/M_image_5.jpg'
+import peakorchardImg from '../public/assets/projects/peakorchard/2.jpg';
+// import bardegroupImg from '../public/assets/projects/bardegroup/2.jpg';
+import anjaneyagroupImg from '../public/assets/projects/anjaneyagroup/AN_Image_1.jpg';
 
 
 // Define the projects array

@@ -1,8 +1,8 @@
 import React from 'react'
-import Rubyw from "../../assets/images/ruby_wing_flat.png";
-import Emeraldw from "../../assets/images/emerald_wing_flat.png";
-import Pearlw from "../../assets/images/pearl_wing_flat.png";
-import Topazw from "../../assets/images/topaz_wing_flat.png";
+import Rubyw from "../../public/assets/images/ruby_wing_flat.png";
+import Emeraldw from "../../public/assets/images/emerald_wing_flat.png";
+import Pearlw from "../../public/assets/images/pearl_wing_flat.png";
+import Topazw from "../../public/assets/images/topaz_wing_flat.png";
 import { delay, motion } from "framer-motion";
 import { FadeRight, FadeUp } from '../../utility/animation';
 import { BiSolidArrowToRight } from 'react-icons/bi';

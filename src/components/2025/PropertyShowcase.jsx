@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
-import Mbinfra from "../../assets/images/mbinfra_1.jpg";
-import Peakorchard from "../../assets/images/peakorchard.jpg";
-import Anjaneyagroup from "../../assets/images/anjaneyagroup.jpg";
-import WoodsResidency from "../../assets/images/woodsresidency.jpg";
+import Mbinfra from "../../public/assets/images/mbinfra_1.jpg";
+import Peakorchard from "../../public/assets/images/peakorchard.jpg";
+import Anjaneyagroup from "../../public/assets/images/anjaneyagroup.jpg";
+import WoodsResidency from "../../public/assets/images/woodsresidency.jpg";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { BiSolidArrowToRight } from "react-icons/bi";

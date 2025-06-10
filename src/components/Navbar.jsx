@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import logoImg from "../assets/images/Inheritance_logo.png";
+import logoImg from "../public/assets/images/Inheritance_logo.png";
 // eslint-disable-next-line no-unused-vars
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";

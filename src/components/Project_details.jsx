@@ -14,55 +14,55 @@ import {
 } from "react-icons/fa";
 
 // mbinfra
-import M_Image_1 from "../assets/projects/mbinfra/M_Image_1.jpg";
-import M_Image_3 from "../assets/projects/mbinfra/M_Image_3.jpg";
-import M_Image_5 from "../assets/projects/mbinfra/M_Image_5.jpg";
-import M_Image_6 from "../assets/projects/mbinfra/M_Image_6.jpg";
-import M_Image_7 from "../assets/projects/mbinfra/M_Image_7.jpg";
-import M_Image_11 from "../assets/projects/mbinfra/M_Image_11.png";
-import M_Image_12 from "../assets/projects/mbinfra/M_Image_12.png";
-import M_Image_13 from "../assets/projects/mbinfra/M_Image_13.png";
-import M_Image_14 from "../assets/projects/mbinfra/M_Image_14.png";
+import M_Image_1 from "../public/assets/projects/mbinfra/M_Image_1.jpg";
+import M_Image_3 from "../public/assets/projects/mbinfra/M_Image_3.jpg";
+import M_Image_5 from "../public/assets/projects/mbinfra/M_Image_5.jpg";
+import M_Image_6 from "../public/assets/projects/mbinfra/M_Image_6.jpg";
+import M_Image_7 from "../public/assets/projects/mbinfra/M_Image_7.jpg";
+import M_Image_11 from "../public/assets/projects/mbinfra/M_Image_11.png";
+import M_Image_12 from "../public/assets/projects/mbinfra/M_Image_12.png";
+import M_Image_13 from "../public/assets/projects/mbinfra/M_Image_13.png";
+import M_Image_14 from "../public/assets/projects/mbinfra/M_Image_14.png";
 // building structure
-import M_BS_1 from "../assets/projects/mbinfra/M_BS_1.jpg";
-import M_BS_2 from "../assets/projects/mbinfra/M_BS_2.jpg";
-import M_BS_3 from "../assets/projects/mbinfra/M_BS_3.jpg";
-import emerald_floor_plan from "../assets/projects/mbinfra/emerald_floor_plan.jpg";
-import topaz_floor_plan from "../assets/projects/mbinfra/topaz_floor_plan.jpg";
-import pearl_floor_plan from "../assets/projects/mbinfra/pearl_floor_plan.jpg";
-import ruby_floor_plan from "../assets/projects/mbinfra/ruby_floor_plan.jpg";
+import M_BS_1 from "../public/assets/projects/mbinfra/M_BS_1.jpg";
+import M_BS_2 from "../public/assets/projects/mbinfra/M_BS_2.jpg";
+import M_BS_3 from "../public/assets/projects/mbinfra/M_BS_3.jpg";
+import emerald_floor_plan from "../public/assets/projects/mbinfra/emerald_floor_plan.jpg";
+import topaz_floor_plan from "../public/assets/projects/mbinfra/topaz_floor_plan.jpg";
+import pearl_floor_plan from "../public/assets/projects/mbinfra/pearl_floor_plan.jpg";
+import ruby_floor_plan from "../public/assets/projects/mbinfra/ruby_floor_plan.jpg";
 // Amenities
-import M_Image_8 from "../assets/projects/mbinfra/M_Image_8.jpg";
-import M_Image_9 from "../assets/projects/mbinfra/M_Image_9.jpg";
-import M_Image_10 from "../assets/projects/mbinfra/M_Image_10.jpg";
-import AM_Image_11 from "../assets/projects/mbinfra/AM_Image_11.jpg";
-import AM_Image_12 from "../assets/projects/mbinfra/AM_Image_12.jpg";
-import AM_Image_13 from "../assets/projects/mbinfra/AM_Image_13.jpg";
+import M_Image_8 from "../public/assets/projects/mbinfra/M_Image_8.jpg";
+import M_Image_9 from "../public/assets/projects/mbinfra/M_Image_9.jpg";
+import M_Image_10 from "../public/assets/projects/mbinfra/M_Image_10.jpg";
+import AM_Image_11 from "../public/assets/projects/mbinfra/AM_Image_11.jpg";
+import AM_Image_12 from "../public/assets/projects/mbinfra/AM_Image_12.jpg";
+import AM_Image_13 from "../public/assets/projects/mbinfra/AM_Image_13.jpg";
 
 // peak orchard
-import PO_Image_1 from "../assets/projects/peakorchard/2.jpg";
-import PO_Image_2 from "../assets/projects/peakorchard/PO_Image_2.png";
-import PO_Image_3 from "../assets/projects/peakorchard/PO_Image_3.png";
-import PO_Image_4 from "../assets/projects/peakorchard/PO_Image_4.png";
+import PO_Image_1 from "../public/assets/projects/peakorchard/2.jpg";
+import PO_Image_2 from "../public/assets/projects/peakorchard/PO_Image_2.png";
+import PO_Image_3 from "../public/assets/projects/peakorchard/PO_Image_3.png";
+import PO_Image_4 from "../public/assets/projects/peakorchard/PO_Image_4.png";
 
 // anjaneyagroup group
-import AN_Image_1 from "../assets/projects/anjaneyagroup/AN_Image_1.jpg";
-import AN_Image_2 from "../assets/projects/anjaneyagroup/AN_Image_2.jpg";
-import AN_Image_3 from "../assets/projects/anjaneyagroup/AN_Image_3.jpg";
-import AN_Image_4 from "../assets/projects/anjaneyagroup/AN_Image_4.jpg";
+import AN_Image_1 from "../public/assets/projects/anjaneyagroup/AN_Image_1.jpg";
+import AN_Image_2 from "../public/assets/projects/anjaneyagroup/AN_Image_2.jpg";
+import AN_Image_3 from "../public/assets/projects/anjaneyagroup/AN_Image_3.jpg";
+import AN_Image_4 from "../public/assets/projects/anjaneyagroup/AN_Image_4.jpg";
 
 // woods residency
-import W_Image_1 from "../assets/projects/woods/W_Image_1.jpg";
-import W_Image_2 from "../assets/projects/woods/W_Image_2.jpg";
-import W_Image_3 from "../assets/projects/woods/W_Image_3.jpg";
-import W_Image_4 from "../assets/projects/woods/W_Image_4.jpg";
-import W_Image_5 from "../assets/projects/woods/W_Image_5.jpg";
+import W_Image_1 from "../public/assets/projects/woods/W_Image_1.jpg";
+import W_Image_2 from "../public/assets/projects/woods/W_Image_2.jpg";
+import W_Image_3 from "../public/assets/projects/woods/W_Image_3.jpg";
+import W_Image_4 from "../public/assets/projects/woods/W_Image_4.jpg";
+import W_Image_5 from "../public/assets/projects/woods/W_Image_5.jpg";
 
 // pdf's
-import Royal_Empire_Final from "../assets/projects/mbinfra/Royal_Empire_Final.pdf";
-import Peak_Orchard_Estate from "../assets/projects/peakorchard/Peak_Orchard_Estate.pdf";
-import Anjaneya_Nagar from "../assets/projects/anjaneyagroup/Anjaneya_Nagar.pdf";
-import Woods_Residency from "../assets/projects/woods/Woods_Residency.pdf";
+import Royal_Empire_Final from "../public/assets/projects/mbinfra/Royal_Empire_Final.pdf";
+import Peak_Orchard_Estate from "../public/assets/projects/peakorchard/Peak_Orchard_Estate.pdf";
+import Anjaneya_Nagar from "../public/assets/projects/anjaneyagroup/Anjaneya_Nagar.pdf";
+import Woods_Residency from "../public/assets/projects/woods/Woods_Residency.pdf";
 
 const Project_details = () => {
   useEffect(() => {

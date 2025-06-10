@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { FadeLeft, FadeRight, FadeUp } from "../utility/animation";
 import { FaFlag, FaLowVision, FaTrophy } from "react-icons/fa";
 // import { NavLink } from "react-router-dom";
-import Anand_Kumar from "../assets/images/Anand_Kumar.jpeg";
-import No_image from "../assets/images/no_image.png";
+import Anand_Kumar from "../public/assets/images/Anand_Kumar.jpeg";
+import No_image from "../public/assets/images/no_image.png";
 import Footer from "./Footer";
 
 const About = () => {
