@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import emailjs from "emailjs-com";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaMap, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactUsModern = () => {
   const [formData, setFormData] = useState({
@@ -10,9 +9,9 @@ const ContactUsModern = () => {
     email: "",
     message: "",
   });
-
   const [showToast, setShowToast] = useState(false);
   const [errors, setErrors] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const validateForm = () => {
     const newErrors = {};
@@ -22,7 +21,7 @@ const ContactUsModern = () => {
       newErrors.mobile = "Enter a valid 10-digit mobile number.";
     if (!formData.email.trim()) newErrors.email = "Email is required.";
     else if (!/\S+@\S+\.\S+/.test(formData.email))
-      newErrors.email = "Enter a valid email.";
+      newErrors.email = "Invalid email format.";
     if (!formData.message.trim()) newErrors.message = "Message is required.";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -33,34 +32,44 @@ const ContactUsModern = () => {
     setErrors({ ...errors, [e.target.id]: "" });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
 
-    emailjs
-      .send(
-        "service_x147r7f",
-        "template_gctosva",
-        {
+    setIsLoading(true);
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/vetapo3244@linacit.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
           name: formData.name,
           mobile: formData.mobile,
           email: formData.email,
           message: formData.message,
-        },
-        {
-          publicKey: "UrvHFT0AFgb7yrCN4",
-        }
-      )
-      .then(() => {
+          _subject: "New Contact Form Submission!",
+          _template: "table",
+        }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
         setShowToast(true);
         setTimeout(() => setShowToast(false), 3000);
         setFormData({ name: "", mobile: "", email: "", message: "" });
         setErrors({});
-      })
-      .catch((error) => {
-        console.error("EmailJS Error:", error);
-        alert("Failed to send email.");
-      });
+      } else {
+        console.error("FormSubmit Error:", data.message);
+        alert(`Failed to send message: ${data.message}`);
+      }
+    } catch (error) {
+      console.error("Network Error:", error);
+      alert("Failed to send message due to a network error.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -95,6 +104,9 @@ const ContactUsModern = () => {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Honeypot field for spam protection */}
+          <input type="text" name="_honey" style={{ display: "none" }} />
+
           <div className="flex gap-4 flex-col md:flex-row">
             <div className="flex-1">
               <input
@@ -103,6 +115,7 @@ const ContactUsModern = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name"
+                name="name"
                 className="w-full p-2 rounded-lg border focus:ring-2 focus:ring-blue-900 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
               />
               {errors.name && <p className="text-red-600 text-sm">{errors.name}</p>}
@@ -116,6 +129,7 @@ const ContactUsModern = () => {
                 onChange={handleChange}
                 placeholder="Mobile"
                 maxLength="10"
+                name="mobile"
                 className="w-full p-2 rounded-lg border focus:ring-2 focus:ring-blue-900 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
               />
               {errors.mobile && <p className="text-red-600 text-sm">{errors.mobile}</p>}
@@ -129,6 +143,7 @@ const ContactUsModern = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
+              name="email"
               className="w-full p-2 rounded-lg border focus:ring-2 focus:ring-blue-900 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
             />
             {errors.email && <p className="text-red-600 text-sm">{errors.email}</p>}
@@ -141,6 +156,7 @@ const ContactUsModern = () => {
               onChange={handleChange}
               placeholder="Message"
               rows="4"
+              name="message"
               className="w-full p-2 rounded-lg border focus:ring-2 focus:ring-blue-900 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
             ></textarea>
             {errors.message && <p className="text-red-600 text-sm">{errors.message}</p>}
@@ -148,9 +164,10 @@ const ContactUsModern = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-800 dark:bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-800 transition"
+            disabled={isLoading}
+            className="w-full bg-blue-800 dark:bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-800 transition disabled:opacity-50"
           >
-            Send Message
+            {isLoading ? "Sending..." : "Send Message"}
           </button>
         </form>
 
