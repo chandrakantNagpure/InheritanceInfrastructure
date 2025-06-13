@@ -7,7 +7,7 @@ const LeadershipTeam = () => {
     {
       name: "Mr. Anand Kumar",
       title: "Director, Inheritance Infrastructure Private Limited",
-      image: "./src/public/assets/images/Anand_Kumar.jpeg",
+      image: "/src/public/assets/images/Anand_Kumar.jpeg",
       description: [
         "Mr. Anand Kumar is a seasoned financial expert and a dynamic leader with over 16 years of rich experience in insurance, operations, retail banking, and government banking. Throughout his career, he has played a pivotal role in driving strategic growth, optimizing financial operations, and fostering strong client relationships across diverse banking sectors.",
       ],
