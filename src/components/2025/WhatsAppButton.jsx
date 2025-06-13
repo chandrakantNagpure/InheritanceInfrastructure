@@ -8,7 +8,7 @@ const WhatsAppButton = () => {
       href={`https://wa.me/${phoneNumber}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-5 left-5 bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition z-10"
+      className="fixed bottom-20 right-5 bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition z-10"
       aria-label="Chat on WhatsApp"
     >
       <FaWhatsapp size={24} />

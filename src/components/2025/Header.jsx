@@ -54,11 +54,13 @@ const Header = () => {
       <div className="flex items-center justify-between px-5 lg:px-20 py-3">
         {/* Logo */}
         <div className="flex items-center gap-4">
-          <img
-            src={logoImg}
-            alt="Logo"
-            className="w-[220px] h-[70px] object-contain transition-all duration-300"
-          />
+          <NavLink to="/" aria-label="Inheritance Infrastructure Home">
+            <img
+              src={logoImg}
+              alt="Inheritance Infrastructure Logo"
+              className="w-[220px] h-[70px] object-contain transition-all duration-300"
+            />
+          </NavLink>
         </div>
 
         {/* Desktop Nav */}
