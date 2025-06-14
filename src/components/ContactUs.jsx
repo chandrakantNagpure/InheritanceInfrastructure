@@ -52,15 +52,6 @@ const ContactUs = () => {
             referrerPolicy="no-referrer-when-downgrade"
             title="Google Maps"
           ></iframe>
-          {/* <p className="text-gray-700">
-            <strong>Address:</strong> Plot No. 25, Sadan Housing Society, Anu Jyoti Apartment, Old Sneh Nagar, Near Santaji College, Nagpur, Maharashtra- 440015, India.
-          </p>
-          <p className="text-gray-700">
-            <strong>Phone:</strong> +91-7887860121
-          </p>
-          <p className="text-gray-700">
-            <strong>Email:</strong> properties@inheritanceinfra.in, inheritanceinfra@gmail.com
-          </p> */}
         </div>
 
         {/* Right Side: Input Form */}

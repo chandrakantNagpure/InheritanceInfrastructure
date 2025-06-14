@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Banner from "./2025/Banner";
-import AboutHeader from "./2025/AboutHeader";
 import CompanyOverview from "./2025/CompanyOverview";
 import LeadershipTeam from "./2025/LeadershipTeam";
 import SiteFooter from './2025/SiteFooter.jsx';
@@ -13,7 +12,6 @@ const About = () => {
   return (
     <div className="font-poppins  bg-gray-100">
       <Banner />
-      {/* <AboutHeader /> */}
       <CompanyOverview />
       <LeadershipTeam />
       <SiteFooter />
